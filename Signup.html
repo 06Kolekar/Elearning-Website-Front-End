@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+    <link rel="stylesheet" href="CSS/signup.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="form-container" id="loginForm">
+            <h2>Login</h2>
+            <form action="">
+                <div class="from-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" placeholder="Enter the email" required>
+                </div>
+                <div class="from-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter the password" required>
+                </div>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" onclick="showRegistration()">Register</a></p>
+            </form>
+        </div>
+
+        <div class="form-container hidden" id="registrationForm">
+            <h2>Register</h2>
+            <form action="">
+                <div class="from-group">
+                    <label for="registerName">Name</label>
+                    <input type="text" id="registerName" placeholder="Enter the name" required>
+                </div>
+                <div class="from-group">
+                    <label for="registerMobile">Mobile</label>
+                    <input type="number" id="registerMobile" placeholder="Enter the mobile number" onkeypress="return isPhoneNumber(event)" maxlength="10" required>
+                </div>
+                <div class="from-group">
+                    <label for="registerEmail">Email</label>
+                    <input type="email" id="registerEmail" placeholder="Enter the email" required>
+                </div>
+                <div class="from-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" placeholder="Enter the password" required>
+                </div>
+                <div class="from-group">
+                    <label for="registerCPassword">Re-Enter Password</label>
+                    <input type="password" id="registerCPassword" placeholder="Re-Enter the password" required>
+                </div>
+                <button type="submit">Register</button>
+                <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+            </form>
+        </div>
+
+    </div>
+    <script src="javascript/signup.js"></script>
+</body>
+</html>

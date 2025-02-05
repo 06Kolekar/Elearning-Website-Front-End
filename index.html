@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_double_arrow_down" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons&family=Material+Symbols+Outlined:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Education</title>
+</head>
+<body>
+    <div class="head-container">
+        <div class="logo">
+            <a href="#"><span class="material-symbols-outlined">book_4</span>eLearning</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav-container">
+            <div class="nav-content">
+                <a href="#home">Home</a>
+            </div>
+            <div class="nav-content">
+                <a href="#about">About</a>
+            </div>
+            <div class="nav-content">
+                <a href="#course">Course</a>
+            </div>
+            <div class="nav-content">
+                <button class="dropdown-btn">
+                    Page <span class="material-symbols-outlined">keyboard_double_arrow_down</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">page1</a>
+                    <a href="#">page2</a>
+                    <a href="#">page3</a>
+                </div>
+            </div>
+            <div class="nav-content">
+                <a href="#contact">Contact</a>
+            </div>
+            <form action="" method="post">
+                <div class="nav-search">
+                    <input type="text" id="nav-search-bar" placeholder="Search courses..." />
+                    <button id="nav-search-btn"><span class="material-symbols-outlined">search</span></button>
+                </div>
+            </form>
+            <div class="nav-cart">
+                <a href="cart.html"><span class="material-symbols-outlined">shopping_cart</span></a>
+            </div>
+            <div class="nav-btn">
+                <a href="Signup.html">Join Now &rarr;</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content" id="home">
+        <div class="slideshow">
+            <div class="slide active" style="background-image: url(img/2148151036.jpg);"></div>
+            <div class="slide" style="background-image: url(img/116823.jpg);"></div>
+            <div class="slide" style="background-image: url(img/top-view-laptop-with-diploma-academic-cap.jpg);"></div>
+        </div>
+        <div class="title-container">
+            BEST ONLINE COURSES
+        </div>
+        <div class="highlight-container">
+            Get Educated Online
+        </div>
+        <div class="highlight-container">
+            From your Home
+        </div>
+        <div class="parag-container">
+            <p>Find the best online courses to upgrade your skills, explore new passions, or advance your career. Learn at your own pace with expert-led content and flexible schedules, designed to fit your lifestyle. Start your journey today!</p>
+        </div>
+        <div class="btn-container">
+            <button class="btn-read">
+                Read More
+            </button>
+            <button class="btn-join">
+                <a href="Signup.html">Join Now &rarr;</a>
+            </button>
+        </div>
+    </div>
+
+    <div class="content-about" id="about">
+        <div class="title-services">
+            About
+        </div>
+        <div class="parag-container-about">
+            <p>The About Us page is about the people who visit your site. Talk about what they are interested in and how you can help them out. In other words, you should talk in the context of how you serve your readers. Present a problem they face, provide a solution and explain to them how it works out for them.</p>
+        </div>
+    </div>
+
+    <div class="content-services" id="course">
+        <div class="title-services">
+            What you'll learn.
+        </div>
+        <div>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Java Full Stack Developer</h3>
+                    <p>Learn the java full stack developer and master your skills.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="card">
+                    <h3>AI & ML</h3>
+                    <p>Learn the AI & ML and upgrade your skills.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="card">
+                    <h3>Data Science</h3>
+                    <p>Learn the Data Scienece with hand on experience.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="card">
+                    <h3>Data Structure and Algorithm</h3>
+                    <p>Learn Data Structure and Algorithm and enhance yor thinking.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="card">
+                    <h3>IoTs</h3>
+                    <p>Learn IoTs for understanding electronics.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>Learn the basics of structuring web pages with HTML.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>Master the art of styling web pages with CSS.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>Learn how to add interactivity to websites using JavaScript.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="content-contact" id="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST" class="form-contact">
+            <div class="finput">
+                Name:
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="finput">
+                Email:
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="finput">
+                Message:
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+            </div>
+            <div class="f-btn">
+                <input type="submit" id="submit" class="submit-btn">
+                <input type="reset" id="submit" class="submit-btn">
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 eLearning. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        <p>Follow us on: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Twitter</a> | 
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+    <script>
+        // Cart System
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function addToCart(course) {
+            cart.push(course);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Course added to cart!');
+        }
+
+        document.querySelectorAll('.enroll-btn').forEach((button) => {
+            button.addEventListener('click', () => {
+                const courseTitle = button.parentElement.querySelector('h3').textContent;
+                addToCart(courseTitle);
+            });
+        });
+
+        function toggleMenu() {
+            const navContainer = document.querySelector('.nav-container');
+            navContainer.classList.toggle('active');
+        }
+
+        let slides = document.querySelectorAll('.slide');
+        let index = 0;
+
+        setInterval(() => {
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+        }, 5000);
+    </script>
+</body>
+</html>
